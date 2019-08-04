@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background: #3E4347;
+    color: #FFFFFF;  
+}
+
+.container > section {
+    width: 50%;
+    height: 100%;
+}
+
+/* Profile Image section */
+.profile-image {
+    /* margin-left: 250px; */
+    background: url(RAPH_hoodie.svg) no-repeat bottom center;
+    background-size: 80vh;
+}
+
+/* Profile Info section */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name{
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 570;
+    display: inline;
+}
+
+.profession {
+    color: #A5A6A8;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 5%;
+    /* max-width: 330px; */
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* Links section */
+.links {
+    margin-top: 45px;
+    margin-left: 20%;
+}
+
+
+/* Social links */
+
+a { color: inherit; } /* lets the links inherit the color of its parent and not show the purple hyperlink color */
+
+.social-links {
+    letter-spacing: 50px;
+    text-decoration: none;
+}
+
+.social-links:hover {
+    color: grey;
+}
+
+.social-links span{
+    display: inline-block;
+    width: 36px;
+    height: 24px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.social-links span:hover {
+    color: #FFFFFF;
+}
+
+.github {
+    background-image: url()
+}
+
