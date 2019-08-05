@@ -73,7 +73,7 @@ a { color: inherit; } /* lets the links inherit the color of its parent and not 
     color: grey;
 }
 
-.links span{
+.links i{
     display: inline-block;
     width: 36px;
     height: 24px;
@@ -82,7 +82,7 @@ a { color: inherit; } /* lets the links inherit the color of its parent and not 
     background-repeat: no-repeat;
 }
 
-.links span:hover {
+.links i:hover {
     color: #FFFFFF;
 }
 
