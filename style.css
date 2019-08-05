@@ -64,16 +64,16 @@ body {
 
 a { color: inherit; } /* lets the links inherit the color of its parent and not show the purple hyperlink color */
 
-.social-links {
+.links {
     letter-spacing: 50px;
     text-decoration: none;
 }
 
-.social-links:hover {
+.links:hover {
     color: grey;
 }
 
-.social-links span{
+.links span{
     display: inline-block;
     width: 36px;
     height: 24px;
@@ -82,7 +82,7 @@ a { color: inherit; } /* lets the links inherit the color of its parent and not 
     background-repeat: no-repeat;
 }
 
-.social-links span:hover {
+.links span:hover {
     color: #FFFFFF;
 }
 
