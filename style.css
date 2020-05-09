@@ -60,6 +60,7 @@ body {
 }
 
 
+
 /* Social links */
 
 a { color: inherit; } /* lets the links inherit the color of its parent and not show the purple hyperlink color */
@@ -69,9 +70,9 @@ a { color: inherit; } /* lets the links inherit the color of its parent and not 
     text-decoration: none;
 }
 
-.links:hover {
+/* .links:hover {
     color: grey;
-}
+} */
 
 .links i{
     display: inline-block;
@@ -90,3 +91,33 @@ a { color: inherit; } /* lets the links inherit the color of its parent and not 
     background-image: url()
 }
 
+a:hover {
+    color: rgba(248, 45, 45, 0.76);
+}
+
+
+/* ----------------------------------------------------------------------------- */
+
+/* iPad Retina Screens */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 570;
+    display: inline;
+}
+
+
+}
