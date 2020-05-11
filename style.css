@@ -53,6 +53,10 @@ body {
     line-height: 30px;
 }
 
+.professionPortrait {
+    display: none;
+}
+
 /* Links section */
 .links {
     margin-top: 45px;
@@ -69,10 +73,6 @@ a { color: inherit; } /* lets the links inherit the color of its parent and not 
     letter-spacing: 50px;
     text-decoration: none;
 }
-
-/* .links:hover {
-    color: grey;
-} */
 
 .links i{
     display: inline-block;
@@ -98,26 +98,93 @@ a:hover {
 
 /* ----------------------------------------------------------------------------- */
 
-/* iPad Retina Screens */
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
-
-.profile-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.name{
-    font-size: 50px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 570;
-    display: inline;
+@media screen and (max-width: 700px) {
+    .container {
+        background: green;
+    }
 }
 
 
+/* iPad 3, 4, new Air, Pro 9.7 PORTRAIT */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+    .profile-image {
+        /* margin-left: 250px; */
+        background: url(raphaelavatar2.svg) no-repeat bottom right; /* making sure that it only shows half the picture in portrait mode */
+        background-size: 80vh;
+    }
+
+    .name{
+        font-size: 60px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 570;
+        display: inline;
+    }
+
+    .profession {
+        display: none;
+    }
+
+    .professionPortrait {
+        display: inline-block;
+        color: #A5A6A8;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-left: 1.8%;
+        /* max-width: 330px; */
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+
+    .links {
+        letter-spacing: 50px;
+        text-decoration: none;
+        margin-left: 10px;
+        
+    }
+
+    .links i{
+        display: inline-block;
+        width: 36px;
+        height: 24px;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+/* iPad 3, 4, new Air, Pro 9.7 LANDSCAPE */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .name{
+        font-size: 50px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 570;
+        display: inline;
+    }
+    
+    .profession {
+        color: #A5A6A8;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-left: 1.8%;
+        /* max-width: 330px; */
+        font-size: 17px;
+        line-height: 30px;
+    }
 }
