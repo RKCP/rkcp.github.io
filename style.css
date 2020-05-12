@@ -63,6 +63,12 @@ body {
     margin-left: 20%;
 }
 
+.links-mobile {
+    display: none;
+    margin-top: 45px;
+    margin-left: 20%;
+}
+
 
 
 /* Social links */
@@ -99,14 +105,14 @@ a:hover {
 /* ----------------------------------------------------------------------------- */
 
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
     .container {
         background: green;
     }
-}
+} */
 
 
-/* iPad 3, 4, new Air, Pro 9.7 PORTRAIT */
+/* ----------------------------------------- iPad 3, 4, new Air, Pro 9.7 PORTRAIT ----------------------------------------- */
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -124,7 +130,7 @@ a:hover {
         font-size: 60px;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-weight: 570;
+        font-weight: 670;
         display: inline;
     }
 
@@ -163,7 +169,7 @@ a:hover {
 }
 
 
-/* iPad 3, 4, new Air, Pro 9.7 LANDSCAPE */
+/* ----------------------------------------- iPad 3, 4, new Air, Pro 9.7 LANDSCAPE ----------------------------------------- */
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -174,7 +180,7 @@ a:hover {
         font-size: 50px;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-weight: 570;
+        font-weight: 670;
         display: inline;
     }
     
@@ -187,4 +193,83 @@ a:hover {
         font-size: 17px;
         line-height: 30px;
     }
+}
+
+
+
+
+/* ----------------------------------------- iPhone 6, 6S, 7 and 8 PORTRAIT----------------------------------------- */
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+
+    .profile-image {
+        background: url(raphaelavatar2.svg) no-repeat bottom; /* making sure that it only shows half the picture in portrait mode */
+        background-size: 72vh;
+        background-position-x: 85%;
+    }
+
+    .name{
+        font-size: 32px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-weight: 700;
+        display: inline;
+    }
+
+    .profession {
+        display: none;
+    }
+
+    .professionPortrait {
+        display: inline-block;
+        color: #A5A6A8;
+        font-weight: 400;
+        margin-top: 25px;
+        margin-left: 0%;
+        /* max-width: 330px; */
+        font-size: 12.3px;
+        line-height: 30px;
+        padding-right: 20%;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links-mobile {
+        display: inline-block;
+        letter-spacing: 20px;
+        text-decoration: none;
+        margin-left: 5px;
+        padding: 0%;
+        margin-top: 25px;
+        
+    }
+
+    .links-mobile i{
+        display: inline-block;
+        width: 36px;
+        height: 24px;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+
+/* ----------------------------------------- iPhone 6, 6S, 7 and 8 LANDSCAPE----------------------------------------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
 }
