@@ -211,7 +211,7 @@ a:hover {
     .profile-image {
         background: url(raphaelavatar2.svg) no-repeat bottom; /* making sure that it only shows half the picture in portrait mode */
         background-size: 72vh;
-        background-position-x: 85%;
+        background-position-x: 86%;
     }
 
     .name{
