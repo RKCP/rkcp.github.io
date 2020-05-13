@@ -65,8 +65,6 @@ body {
 
 .links-mobile {
     display: none;
-    margin-top: 45px;
-    margin-left: 20%;
 }
 
 
@@ -102,7 +100,19 @@ a:hover {
 }
 
 
-/* ----------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------- MEDIA QUERIES ---------------------------------------- */
 
 
 /* @media screen and (max-width: 700px) {
@@ -246,7 +256,7 @@ a:hover {
         display: inline-block;
         letter-spacing: 20px;
         text-decoration: none;
-        margin-left: 5px;
+        margin-left: 0px;
         padding: 0%;
         margin-top: 25px;
         
@@ -270,6 +280,272 @@ a:hover {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    .name{
+        font-size: 32px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-weight: 700;
+        display: inline;
+    }
+
+    .profession {
+        display: none;
+    }
+
+    .professionPortrait {
+        display: inline-block;
+        color: #A5A6A8;
+        font-weight: 400;
+        margin-top: 25px;
+        margin-left: 0%;
+        /* max-width: 330px; */
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links-mobile {
+        display: inline-block;
+        letter-spacing: 30px;
+        text-decoration: none;
+        margin-left: 0%;
+        padding: 0%;
+        margin-top: 25px;
+        
+    }
+
+
+
+}
+
+
+
+/* ----------- iPhone 6+, 7+ and 8+ PORTRAIT----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    .profile-image {
+        background: url(raphaelavatar2.svg) no-repeat bottom; /* making sure that it only shows half the picture in portrait mode */
+        background-size: 74vh;
+        background-position-x: 84%;
+    }
+
+    .name{
+        font-size: 35.5px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-weight: 900;
+        display: inline;
+    }
+
+    .profession {
+        display: none;
+    }
+
+    .professionPortrait {
+        display: inline-block;
+        color: #A5A6A8;
+        font-weight: 400;
+        margin-top: 25px;
+        margin-left: 0%;
+        /* max-width: 330px; */
+        font-size: 13.3px;
+        line-height: 30px;
+        padding-right: 20%;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links-mobile {
+        display: inline-block;
+        letter-spacing: 20px;
+        text-decoration: none;
+        margin-left: 0px;
+        padding: 0%;
+        margin-top: 25px;
+        
+    }
+
+    .links-mobile i{
+        display: inline-block;
+        width: 36px;
+        height: 24px;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+/* ----------- iPhone 6+, 7+ and 8+ LANDSCAPE----------- */
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
+
+    .name{
+        font-size: 35px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-weight: 900;
+        display: inline;
+    }
+
+    .profession {
+        display: none;
+    }
+
+    .professionPortrait {
+        display: inline-block;
+        color: #A5A6A8;
+        font-weight: 400;
+        margin-top: 25px;
+        margin-left: 0%;
+        /* max-width: 330px; */
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links-mobile {
+        display: inline-block;
+        letter-spacing: 30px;
+        text-decoration: none;
+        margin-left: 0%;
+        padding: 0%;
+        margin-top: 25px;
+        
+    }
+}
+
+
+/* ----------- iPhone X PORTRAIT----------- */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    .profile-image {
+        background: url(raphaelavatar2.svg) no-repeat bottom; /* making sure that it only shows half the picture in portrait mode */
+        background-size: 60vh;
+        background-position-x: 84%;
+    }
+
+    .name{
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-weight: 900;
+        display: inline;
+        margin-top: 50%;
+    }
+
+    .profession {
+        display: none;
+    }
+
+    .professionPortrait {
+        display: inline-block;
+        color: #A5A6A8;
+        font-weight: 400;
+        margin-top: 25px;
+        margin-left: 0%;
+        /* max-width: 330px; */
+        font-size: 10.3px;
+        line-height: 30px;
+        padding-right: 20%;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links-mobile {
+        display: inline-block;
+        letter-spacing: 20px;
+        text-decoration: none;
+        margin-left: 0px;
+        padding: 0%;
+        margin-top: 25px;
+        
+    }
+
+    .links-mobile i{
+        display: inline-block;
+        width: 36px;
+        height: 24px;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+/* ----------- iPhone X LANDSCAPE----------- */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+
+    .name{
+        font-size: 38px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-weight: 900;
+        display: inline;
+    }
+
+    .profession {
+        display: none;
+    }
+
+    .professionPortrait {
+        display: inline-block;
+        color: #A5A6A8;
+        font-weight: 400;
+        margin-top: 25px;
+        margin-left: 0%;
+        /* max-width: 330px; */
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links-mobile {
+        display: inline-block;
+        letter-spacing: 30px;
+        text-decoration: none;
+        margin-left: 0%;
+        padding: 0%;
+        margin-top: 25px;
+        
+    }
 
 }
