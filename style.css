@@ -205,7 +205,82 @@ a:hover {
     }
 }
 
+/* ----------------------------------------- iPhone 5 and SE PORTRAIT----------------------------------------- */
 
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .profile-image {
+        background: url(raphaelavatar2.svg) no-repeat bottom; /* making sure that it only shows half the picture in portrait mode */
+        background-size: 70vh;
+        background-position-x: 86%;
+    }
+
+    .name{
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-weight: 800;
+        display: inline;
+    }
+
+    .profession {
+        display: none;
+    }
+
+    .professionPortrait {
+        display: inline-block;
+        color: #A5A6A8;
+        font-weight: 400;
+        margin-top: 25px;
+        margin-left: 0%;
+        /* max-width: 330px; */
+        font-size: 10.5px;
+        line-height: 30px;
+        padding-right: 20%;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links-mobile {
+        display: inline-block;
+        letter-spacing: 13px;
+        text-decoration: none;
+        margin-left: 0px;
+        padding: 0%;
+        margin-top: 25px;
+        
+    }
+
+    .links-mobile i{
+        display: inline-block;
+        width: 36px;
+        height: 24px;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/* ----------------------------------------- iPhone 5 and SE LANDSCAPE----------------------------------------- */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    /* Looks fine without any changes */
+
+}
 
 
 /* ----------------------------------------- iPhone 6, 6S, 7 and 8 PORTRAIT----------------------------------------- */
@@ -445,8 +520,8 @@ a:hover {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
 
-    .profile-image {
-        background: url(raphaelavatar2.svg) no-repeat bottom; /* making sure that it only shows half the picture in portrait mode */
+    /* .profile-image {
+        background: url(raphaelavatar2.svg) no-repeat bottom;
         background-size: 60vh;
         background-position-x: 84%;
     }
@@ -470,7 +545,6 @@ a:hover {
         font-weight: 400;
         margin-top: 25px;
         margin-left: 0%;
-        /* max-width: 330px; */
         font-size: 10.3px;
         line-height: 30px;
         padding-right: 20%;
@@ -497,7 +571,7 @@ a:hover {
         background-position: center center;
         background-size: contain;
         background-repeat: no-repeat;
-    }
+    } */
 
 }
 
@@ -529,7 +603,6 @@ a:hover {
         font-weight: 400;
         margin-top: 25px;
         margin-left: 0%;
-        /* max-width: 330px; */
         font-size: 18px;
         line-height: 30px;
     }
