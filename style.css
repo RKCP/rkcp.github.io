@@ -622,3 +622,35 @@ a:hover {
     }
 
 }
+
+
+
+/* ----------- Laptops ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    .name{
+        font-size: 60px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-weight: 500;
+        display: inline;
+    }
+
+    .profession {
+        color: #A5A6A8;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-left: 8%;
+        /* max-width: 330px; */
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+}
+
+
+
+
